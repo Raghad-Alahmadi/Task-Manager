@@ -11,12 +11,13 @@ import { TaskFormComponent } from './components/task-form/task-form.component';
 import { TaskListComponent } from './components/task-list/task-list.component';
 import { taskReducer } from './store/reducers/task.reducer';
 import { TaskEffects } from './store/effects/task.effects';
-
+import { UsersListComponent } from './components/users-list/users-list.component';
 @NgModule({
   declarations: [
     AppComponent,
     TaskFormComponent,
-    TaskListComponent
+    TaskListComponent,
+    UsersListComponent
   ],
   imports: [
     BrowserModule,

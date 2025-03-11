@@ -1,0 +1,26 @@
+
+.tasks-layout {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .form-section {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .list-section {
+    flex: 2;
+    min-width: 400px;
+  }
+  
+  @media (max-width: 768px) {
+    .tasks-layout {
+      flex-direction: column;
+    }
+    
+    .form-section, .list-section {
+      width: 100%;
+    }
+  }

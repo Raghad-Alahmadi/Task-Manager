@@ -2,18 +2,26 @@
   <header class="app-header">
     <div class="header-content">
       <h1 class="app-title">Task Management System</h1>
-      <p class="app-subtitle">Organize your tasks efficiently</p>
+      <nav class="app-nav">
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Tasks</a>
+        <a routerLink="/users" routerLinkActive="active">Users</a>
+      </nav>
     </div>
   </header>
   
-  <main class="app-content">
-    <div class="content-section form-section">
-      <app-task-form></app-task-form>
+  <main class="app-content full-width">
+    <div *ngIf="router.url === '/'" class="tasks-layout full-width">
+      <div class="form-section">
+        <app-task-form></app-task-form>
+      </div>
+      
+      <div class="list-section">
+        <app-task-list></app-task-list>
+      </div>
     </div>
-    
-    <div class="content-section list-section">
-      <app-task-list></app-task-list>
-    </div>
+  
+
+      <router-outlet></router-outlet>
   </main>
   
   <footer class="app-footer">

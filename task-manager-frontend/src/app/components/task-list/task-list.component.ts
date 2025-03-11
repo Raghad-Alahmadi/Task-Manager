@@ -17,11 +17,16 @@ export class TaskListComponent implements OnInit {
   tasks$: Observable<Task[]>;
   taskToDelete: string | null = null;
 
-  constructor(private store: Store<{ tasks: Task[] }>) {
-    this.tasks$ = this.store.pipe(select(selectAllTasks));
+  constructor(private store: Store) {
+    this.tasks$ = this.store.select(selectAllTasks);
   }
 
   ngOnInit(): void {
+    // Load tasks on component init
+    this.store.dispatch(loadTasks());
+  }
+
+  reloadTasks(): void {
     this.store.dispatch(loadTasks());
   }
 
@@ -55,6 +60,10 @@ export class TaskListComponent implements OnInit {
       description: newDescription || task.description
     };
     
+    // Make sure we're dispatching the updateTask action
     this.store.dispatch(updateTask({ task: updatedTask }));
+    
+    // For debugging - log what we're doing
+    console.log('Dispatching task update:', updatedTask);
   }
 }

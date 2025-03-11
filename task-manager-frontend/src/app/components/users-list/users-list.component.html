@@ -1,0 +1,101 @@
+<div class="container">
+  <h2 class="list-title">User Management</h2>
+  
+  <!-- Form section - displayed first (top) -->
+  <div class="section">
+    <div class="card">
+      <div class="card-header">
+        {{ isEditing ? 'Edit User' : 'Add New User' }}
+      </div>
+      <div class="card-body">
+        <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" formControlName="username">
+            <div *ngIf="formSubmitted && userForm.get('username')?.errors" class="text-danger">
+              <span *ngIf="userForm.get('username')?.errors?.['required']">Username is required</span>
+              <span *ngIf="!userForm.get('username')?.errors?.['required'] && userForm.get('username')?.errors?.['uniqueUsername']">
+                This username is already taken
+              </span>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" formControlName="email">
+            <div *ngIf="formSubmitted && userForm.get('email')?.errors" class="text-danger">
+              <span *ngIf="userForm.get('email')?.errors?.['required']">Email is required</span>
+              <span *ngIf="!userForm.get('email')?.errors?.['required'] && userForm.get('email')?.errors?.['email']">
+                Please enter a valid email address
+              </span>
+              <span *ngIf="!userForm.get('email')?.errors?.['required'] && !userForm.get('email')?.errors?.['email'] && userForm.get('email')?.errors?.['uniqueEmail']">
+                This email is already registered
+              </span>
+            </div>
+          </div>
+          
+          <div class="action-buttons">
+            <button type="submit" class="btn btn-primary">
+              {{ isEditing ? 'Update' : 'Create' }}
+            </button>
+            <button type="button" class="btn btn-secondary" (click)="cancelForm()">
+              Cancel
+            </button>
+            <button *ngIf="!isEditing" type="button" class="btn btn-success" (click)="startAdd()">
+              Clear Form
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <!-- List section - displayed second (bottom) -->
+  <div class="section mt-4">
+    <div class="card">
+      <div class="card-header">
+        <span>Users List</span>
+      </div>
+      <div class="card-body">
+        <div *ngIf="loading$ | async" class="loader">
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+
+        <div class="users-table" *ngIf="!(loading$ | async)">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let user of users$ | async">
+                <td>{{ user.id }}</td>
+                <td>{{ user.username }}</td>
+                <td>{{ user.email }}</td>
+                <td>
+                  <div class="action-buttons">
+                    <button class="btn btn-sm btn-info" (click)="startEdit(user)">
+                      Edit
+                    </button>
+                    <button class="btn btn-sm btn-danger" (click)="deleteUser(user.id)">
+                      Delete
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr *ngIf="(users$ | async)?.length === 0">
+                <td colspan="4" class="text-center">No users found</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
