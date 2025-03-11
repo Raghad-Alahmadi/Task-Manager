@@ -1,7 +1,7 @@
 import { createReducer, on } from '@ngrx/store';
 import * as TaskActions from '../actions/task.actions';
 
-// Keep Task interface definition in reducer file
+
 export interface Task {
   id: string;
   title: string;
