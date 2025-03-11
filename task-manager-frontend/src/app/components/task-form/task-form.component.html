@@ -1,0 +1,21 @@
+<div class="task-form-container">
+    <h2 class="form-title">Add Task</h2>
+    <form [formGroup]="taskForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input id="title" formControlName="title" type="text" placeholder="Enter task title">
+      </div>
+      
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea id="description" formControlName="description" rows="3" placeholder="Enter task description"></textarea>
+      </div>
+      
+      <div class="form-group checkbox-group">
+        <input id="completed" formControlName="completed" type="checkbox">
+        <label for="completed">Mark as completed</label>
+      </div>
+      
+      <button type="submit" class="submit-btn">Add Task</button>
+    </form>
+  </div>

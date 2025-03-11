@@ -1,0 +1,44 @@
+<div class="task-list-container">
+    <h2 class="list-title">Task List</h2>
+    
+    <div class="empty-state" *ngIf="(tasks$ | async)?.length === 0">
+      <p>No tasks yet. Add your first task to get started!</p>
+    </div>
+    
+    <ul class="task-list">
+      <li *ngFor="let task of tasks$ | async" class="task-item" [ngClass]="{'completed': task.completed}">
+        <div class="task-content">
+          <div class="task-header">
+            <input 
+              type="checkbox" 
+              [checked]="task.completed" 
+              (change)="toggleComplete(task)"
+              class="task-checkbox"
+            >
+            <h3 class="task-title">{{ task.title }}</h3>
+          </div>
+          <p class="task-description">{{ task.description }}</p>
+          <span class="task-status" *ngIf="task.completed">Completed</span>
+        </div>
+        
+        <div class="task-actions">
+          <!-- Normal delete button when not confirming -->
+          <button 
+            *ngIf="taskToDelete !== task.id" 
+            class="delete-btn" 
+            (click)="promptDeleteTask(task.id)"
+          >
+            <span class="delete-icon">×</span>
+            <span class="delete-text">Delete</span>
+          </button>
+          
+          <!-- Confirmation buttons when confirming -->
+          <div *ngIf="taskToDelete === task.id" class="delete-confirmation">
+            <span class="confirm-prompt">Delete?</span>
+            <button class="confirm-btn yes" (click)="confirmDeleteTask(task.id)">Yes</button>
+            <button class="confirm-btn no" (click)="cancelDelete()">No</button>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
