@@ -9,6 +9,7 @@ Task Manager is a web application that allows users to manage their tasks effici
 - Delete tasks
 - Mark tasks as completed
 - View a list of all tasks
+- Manage users (add, edit, delete)
 - Responsive design
 
 ## Prerequisites
@@ -111,6 +112,93 @@ You can test the APIs using tools like Postman or Swagger UI, which is available
 
 - Task API Swagger: https://localhost:5001/swagger
 - User API Swagger: https://localhost:5003/swagger
+
+## State Management with NgRx
+
+The application uses NgRx for state management, providing a robust architecture for handling data flow.
+
+### NgRx Store Structure
+
+The state management is organized into feature modules:
+- **Task State**: Manages all task-related data
+- **User State**: Manages all user-related data
+
+### Core NgRx Components
+
+1. **Actions**:
+   - Defined in `src/app/store/actions/*.actions.ts`
+   - Represent events that happen in the application
+   - Examples: `loadTasks`, `addTask`, `updateTask`, `deleteTask`
+
+2. **Reducers**:
+   - Defined in `src/app/store/reducers/*.reducer.ts`
+   - Handle state transitions based on dispatched actions
+   - Implement pure functions that return a new state object
+
+3. **Selectors**:
+   - Defined in `src/app/store/selectors/*.selectors.ts`
+   - Extract specific pieces of state
+   - Enable component-level data access without knowledge of state structure
+
+4. **Effects**:
+   - Defined in `src/app/store/effects/*.effects.ts`
+   - Handle side effects like API calls
+   - Use RxJS operators to process actions, make API calls, and dispatch new actions
+
+### Data Flow
+
+1. **Component** dispatches an action (e.g., `loadTasks`)
+2. **Effect** intercepts the action and makes an API call
+3. On API response, the effect dispatches a success action (e.g., `loadTasksSuccess`)
+4. **Reducer** handles the success action and updates the state
+5. **Selectors** extract the updated state
+6. **Components** receive the updated data through selectors and Observable pattern
+
+### Example NgRx Implementation
+
+Task component dispatches an action to add a new task:
+```typescript
+// In task-form.component.ts
+onSubmit(): void {
+  if (this.taskForm.valid) {
+    const task: Task = this.taskForm.value;
+    this.store.dispatch(addTask({ task }));
+    this.resetForm();
+  }
+}
+```
+
+Task effect handles the API call:
+```typescript
+// In task.effects.ts
+addTask$ = createEffect(() => 
+  this.actions$.pipe(
+    ofType(TaskActions.addTask),
+    mergeMap(({ task }) => 
+      this.taskService.addTask(task).pipe(
+        map(newTask => TaskActions.addTaskSuccess({ task: newTask })),
+        catchError(error => of(TaskActions.addTaskFailure({ error: error.message })))
+      )
+    )
+  )
+);
+```
+
+Task reducer updates the state:
+```typescript
+// In task.reducer.ts
+on(TaskActions.addTaskSuccess, (state, { task }) => {
+  return taskAdapter.addOne(task, { ...state, loading: false });
+})
+```
+
+Component subscribes to selectors:
+```typescript
+// In task-list.component.ts
+constructor(private store: Store) {
+  this.tasks$ = this.store.select(selectAllTasks);
+}
+```
 
 ## Frontend Structure
 
