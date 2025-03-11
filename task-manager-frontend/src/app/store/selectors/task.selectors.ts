@@ -12,4 +12,3 @@ export const selectTaskError = createSelector(
   selectTaskState,
   (state: TaskState) => state.error
 );
-
