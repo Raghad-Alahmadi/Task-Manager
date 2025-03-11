@@ -152,10 +152,10 @@ C:\Users\ahuevo nice\Desktop\Task-Manager\task-manager-backend\service.TaskAPI\o
 C:\Users\ahuevo nice\Desktop\Task-Manager\task-manager-backend\service.TaskAPI\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.service.TaskAPI.props
 C:\Users\ahuevo nice\Desktop\Task-Manager\task-manager-backend\service.TaskAPI\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.service.TaskAPI.props
 C:\Users\ahuevo nice\Desktop\Task-Manager\task-manager-backend\service.TaskAPI\obj\Debug\net9.0\staticwebassets.pack.json
-C:\Users\ahuevo nice\Desktop\Task-Manager\task-manager-backend\service.TaskAPI\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\ahuevo nice\Desktop\Task-Manager\task-manager-backend\service.TaskAPI\obj\Debug\net9.0\service..720E8395.Up2Date
 C:\Users\ahuevo nice\Desktop\Task-Manager\task-manager-backend\service.TaskAPI\obj\Debug\net9.0\service.TaskAPI.dll
 C:\Users\ahuevo nice\Desktop\Task-Manager\task-manager-backend\service.TaskAPI\obj\Debug\net9.0\refint\service.TaskAPI.dll
 C:\Users\ahuevo nice\Desktop\Task-Manager\task-manager-backend\service.TaskAPI\obj\Debug\net9.0\service.TaskAPI.pdb
 C:\Users\ahuevo nice\Desktop\Task-Manager\task-manager-backend\service.TaskAPI\obj\Debug\net9.0\service.TaskAPI.genruntimeconfig.cache
 C:\Users\ahuevo nice\Desktop\Task-Manager\task-manager-backend\service.TaskAPI\obj\Debug\net9.0\ref\service.TaskAPI.dll
+C:\Users\ahuevo nice\Desktop\Task-Manager\task-manager-backend\service.TaskAPI\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
