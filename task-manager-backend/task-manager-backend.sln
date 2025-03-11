@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35514.174 d17.12
+VisualStudioVersion = 17.12.35514.174
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{2045B83D-A17D-4C49-B726-715267761FC1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "service.TaskAPI", "service.TaskAPI\service.TaskAPI.csproj", "{13AD7BD5-2EE7-4F53-86A0-B46ED442D702}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "service.UserAPI", "service.UserAPI\service.UserAPI.csproj", "{0E8BE1E0-3ED0-4746-AC60-9BC5A64CEA96}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,11 +19,16 @@ Global
 		{13AD7BD5-2EE7-4F53-86A0-B46ED442D702}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13AD7BD5-2EE7-4F53-86A0-B46ED442D702}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13AD7BD5-2EE7-4F53-86A0-B46ED442D702}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E8BE1E0-3ED0-4746-AC60-9BC5A64CEA96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E8BE1E0-3ED0-4746-AC60-9BC5A64CEA96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E8BE1E0-3ED0-4746-AC60-9BC5A64CEA96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E8BE1E0-3ED0-4746-AC60-9BC5A64CEA96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{13AD7BD5-2EE7-4F53-86A0-B46ED442D702} = {2045B83D-A17D-4C49-B726-715267761FC1}
+		{0E8BE1E0-3ED0-4746-AC60-9BC5A64CEA96} = {2045B83D-A17D-4C49-B726-715267761FC1}
 	EndGlobalSection
 EndGlobal
