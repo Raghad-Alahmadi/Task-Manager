@@ -7,7 +7,7 @@ import { Task } from '../store/reducers/task.reducer';
   providedIn: 'root'
 })
 export class TaskService {
-  private apiUrl = 'https://jsonplaceholder.typicode.com/todos';
+  private apiUrl = 'http://localhost:5077/api/task';
   
   constructor(private http: HttpClient) {}
 
