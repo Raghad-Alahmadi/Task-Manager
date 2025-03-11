@@ -1,0 +1,137 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ahuevo nice\\Desktop\\Task-Manager\\task-manager-backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{13AD7BD5-2EE7-4F53-86A0-B46ED442D702}|service.TaskAPI\\service.TaskAPI.csproj|c:\\users\\ahuevo nice\\desktop\\task-manager\\task-manager-backend\\service.taskapi\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13AD7BD5-2EE7-4F53-86A0-B46ED442D702}|service.TaskAPI\\service.TaskAPI.csproj|solutionrelative:service.taskapi\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13AD7BD5-2EE7-4F53-86A0-B46ED442D702}|service.TaskAPI\\service.TaskAPI.csproj|c:\\users\\ahuevo nice\\desktop\\task-manager\\task-manager-backend\\service.taskapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13AD7BD5-2EE7-4F53-86A0-B46ED442D702}|service.TaskAPI\\service.TaskAPI.csproj|solutionrelative:service.taskapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13AD7BD5-2EE7-4F53-86A0-B46ED442D702}|service.TaskAPI\\service.TaskAPI.csproj|c:\\users\\ahuevo nice\\desktop\\task-manager\\task-manager-backend\\service.taskapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{13AD7BD5-2EE7-4F53-86A0-B46ED442D702}|service.TaskAPI\\service.TaskAPI.csproj|solutionrelative:service.taskapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ahuevo nice\\Desktop\\Task-Manager\\task-manager-backend\\service.TaskAPI\\Migrations\\20250311131913_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:service.TaskAPI\\Migrations\\20250311131913_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13AD7BD5-2EE7-4F53-86A0-B46ED442D702}|service.TaskAPI\\service.TaskAPI.csproj|c:\\users\\ahuevo nice\\desktop\\task-manager\\task-manager-backend\\service.taskapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13AD7BD5-2EE7-4F53-86A0-B46ED442D702}|service.TaskAPI\\service.TaskAPI.csproj|solutionrelative:service.taskapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13AD7BD5-2EE7-4F53-86A0-B46ED442D702}|service.TaskAPI\\service.TaskAPI.csproj|c:\\users\\ahuevo nice\\desktop\\task-manager\\task-manager-backend\\service.taskapi\\models\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13AD7BD5-2EE7-4F53-86A0-B46ED442D702}|service.TaskAPI\\service.TaskAPI.csproj|solutionrelative:service.taskapi\\models\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13AD7BD5-2EE7-4F53-86A0-B46ED442D702}|service.TaskAPI\\service.TaskAPI.csproj|c:\\users\\ahuevo nice\\desktop\\task-manager\\task-manager-backend\\service.taskapi\\models\\dto\\taskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13AD7BD5-2EE7-4F53-86A0-B46ED442D702}|service.TaskAPI\\service.TaskAPI.csproj|solutionrelative:service.taskapi\\models\\dto\\taskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20250311131913_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\ahuevo nice\\Desktop\\Task-Manager\\task-manager-backend\\service.TaskAPI\\Migrations\\20250311131913_InitialCreate.cs",
+              "RelativeDocumentMoniker": "service.TaskAPI\\Migrations\\20250311131913_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\ahuevo nice\\Desktop\\Task-Manager\\task-manager-backend\\service.TaskAPI\\Migrations\\20250311131913_InitialCreate.cs",
+              "RelativeToolTip": "service.TaskAPI\\Migrations\\20250311131913_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T13:19:13.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ahuevo nice\\Desktop\\Task-Manager\\task-manager-backend\\service.TaskAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "service.TaskAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\ahuevo nice\\Desktop\\Task-Manager\\task-manager-backend\\service.TaskAPI\\appsettings.json",
+              "RelativeToolTip": "service.TaskAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-11T13:06:53.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ahuevo nice\\Desktop\\Task-Manager\\task-manager-backend\\service.TaskAPI\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "service.TaskAPI\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\ahuevo nice\\Desktop\\Task-Manager\\task-manager-backend\\service.TaskAPI\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "service.TaskAPI\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T12:53:53.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TaskDto.cs",
+              "DocumentMoniker": "C:\\Users\\ahuevo nice\\Desktop\\Task-Manager\\task-manager-backend\\service.TaskAPI\\Models\\Dto\\TaskDto.cs",
+              "RelativeDocumentMoniker": "service.TaskAPI\\Models\\Dto\\TaskDto.cs",
+              "ToolTip": "C:\\Users\\ahuevo nice\\Desktop\\Task-Manager\\task-manager-backend\\service.TaskAPI\\Models\\Dto\\TaskDto.cs",
+              "RelativeToolTip": "service.TaskAPI\\Models\\Dto\\TaskDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T12:53:14.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TaskController.cs",
+              "DocumentMoniker": "C:\\Users\\ahuevo nice\\Desktop\\Task-Manager\\task-manager-backend\\service.TaskAPI\\Controllers\\TaskController.cs",
+              "RelativeDocumentMoniker": "service.TaskAPI\\Controllers\\TaskController.cs",
+              "ToolTip": "C:\\Users\\ahuevo nice\\Desktop\\Task-Manager\\task-manager-backend\\service.TaskAPI\\Controllers\\TaskController.cs",
+              "RelativeToolTip": "service.TaskAPI\\Controllers\\TaskController.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAcwEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T12:51:42.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ahuevo nice\\Desktop\\Task-Manager\\task-manager-backend\\service.TaskAPI\\Program.cs",
+              "RelativeDocumentMoniker": "service.TaskAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\ahuevo nice\\Desktop\\Task-Manager\\task-manager-backend\\service.TaskAPI\\Program.cs",
+              "RelativeToolTip": "service.TaskAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T12:51:02.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Task.cs",
+              "DocumentMoniker": "C:\\Users\\ahuevo nice\\Desktop\\Task-Manager\\task-manager-backend\\service.TaskAPI\\Models\\Task.cs",
+              "RelativeDocumentMoniker": "service.TaskAPI\\Models\\Task.cs",
+              "ToolTip": "C:\\Users\\ahuevo nice\\Desktop\\Task-Manager\\task-manager-backend\\service.TaskAPI\\Models\\Task.cs",
+              "RelativeToolTip": "service.TaskAPI\\Models\\Task.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T12:50:39.289Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

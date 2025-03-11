@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "jW24hHwTzExhXEZagFa20Llt281uZEZs46JvgBslDPc=",
+  "Source": "service.TaskAPI",
+  "BasePath": "_content/service.TaskAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
